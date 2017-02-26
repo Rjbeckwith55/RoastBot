@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script src="jquery-3.1.1.js"></script>
+        <script src="app.js"></script>
+	    <!--Page Title-->
+	    <title>Roast Bot: Get Roasted</title>
+	</head>
+<!--Body-->
+<body>
+    
+    <script type="text/javascript">
+        function showRoast() {
+            document.getElementById('placeHolder').textContent = getRoast();
+        }
+    </script>
+
+    
+	<!--Set Background Color to Grey-->
+	<body style = "background:#636363;">
+
+	<!--Centered Picture-->
+	<p align="center"><img src = "dark_roast.jpg"  alt = "dark_roast" height ="328px" width="640px" border="5px"/></p>
+
+	<!--Line Break-->
+	<hr/>
+
+	<!--Centered Title-->
+	<h1 align="center"><font color ="#98AFC7"><strong><big><i>Roast Bot</i></big></strong></font></h1>
+
+	<!--Line Break-->
+	<hr/>
+
+	<!--Description-->
+	<p align="center"><font color="#C7B097">Paste an image URL into the text box below and click the 'Roast Me' button to recieve a roast based on the submitted image.</font></p>
+        
+    <!--Submit Button-->
+    <form>
+        Enter URL: <input type="text" name="ulrbox" size="50">
+        <button type="button" onclick="showRoast()">Roast Me</button>
+    </form>
+        
+    <!--warn user of offensive content-->
+    <p style="font-size:10px"><font color="#C7B097">*warning: roast may be offensive</font></p>
+        
+    <p id="placeHolder"></p>
+	
+</body>
+
+<!--End of HTML-->
+</html>
